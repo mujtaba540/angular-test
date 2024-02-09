@@ -37,8 +37,11 @@ export class HeroSectionComponent implements OnInit {
         title: 'intelligence artificielle',
         class: 'text-lg md:text-3xl background-text uppercase',
       },
-      { title: 'branding', class: 'text-base md:text-lg text-light-green' },
-      { title: 'aji group', class: 'text-sm md:text-base font-bold' },
+      {
+        title: 'branding',
+        class: 'text-base md:text-lg text-light-green uppercase',
+      },
+      { title: 'aji group', class: 'text-sm md:text-base font-bold uppercase' },
     ];
   }
 }
