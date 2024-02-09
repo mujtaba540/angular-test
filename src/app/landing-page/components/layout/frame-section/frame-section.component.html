@@ -1,0 +1,10 @@
+<section>
+    <img src="assets/images/frame.png">
+    <div class="w-full bg-dark-purple py-4">
+        <div class="marquee flex justify-around gap-16">
+            @for (item of marqueeClass; track $index) {
+                <h1 [class]='item.class'>{{marqueeText}}</h1>
+            }
+        </div>
+    </div>
+</section>

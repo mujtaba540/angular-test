@@ -1,0 +1,31 @@
+<section class="relative">
+    <img src="assets/svgs/hero-background.svg" class="absolute">
+    <div class="flex justify-around items-center pt-40">
+        <img src="assets/svgs/logo.svg">
+        <img src="assets/images/line.png">
+        <p class="max-w-[50ch]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ad quam deserunt dignissimos, labore possimus praesentium, sunt nostrum id earum qui ab fuga sequi animi et ex eligendi eos tenetur.
+        </p>
+    </div>
+    <div class="flex "> 
+        @for (item of workLife; track $index) {
+            <div>
+                <div class="relative" [ngClass]="item.borderClass">
+                    <img [src]="item.image" alt="">
+                    <div class="absolute bottom-0 px-4 py-3 w-full">
+                        <h1 class="text-white font-semibold text-4xl break-words" [ngClass]="item.activeTitleClass">{{item.title}}</h1>
+                        @if (item.description) {
+                            <p class="max-w-md text-white">{{item.description}}</p>
+                        }
+                    </div>
+                </div>
+                <div class="my-5 flex items-center gap-2">
+                    <span class="border-2 border-black rounded-full px-3 text-2xl cursor-pointer hover:bg-black hover:text-white">+</span>
+                    <p class="font-bold">{{item.buttonText}}</p>
+                </div>
+            </div>
+        }
+        
+        
+    </div>
+</section>

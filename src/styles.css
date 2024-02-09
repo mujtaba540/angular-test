@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --white-gray: #F9F9F9;
+    --light-green: #38EFAD;
+    --sphere-blue: #41c0f6;
+    --sphere-purple: #c67cff;
+    --bg-blue: #4606F0;
+    --font-green: #00D2AE;
+    --dark-purple: #100021;
+    --yellow: #FFD644;
+    --dark-blue: #4606F0;
+    --gray: #CDCFD7;
+}
+
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}

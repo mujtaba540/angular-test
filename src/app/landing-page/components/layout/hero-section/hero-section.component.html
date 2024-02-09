@@ -1,0 +1,21 @@
+<section class="">
+    <app-navbar />
+    <div class="relative">
+        <img src="assets/svgs/hero-background.svg" class="absolute">
+        <div class="flex justify-around items-end  gap-2 w-full  ">
+            @for (item of spheres; track $index) {
+            <div class="blured-sphere" [class]="item.class"></div>
+            }
+        </div>
+        <div class="absolute bottom-0 w-full flex justify-around">
+            <div class="flex flex-col justify-center items-center">
+                @for (item of listText; track $index) {
+                    <p [class]="item.class">{{item.title}}</p>
+
+                }
+            </div>
+            <video src="assets/videos/sample.mp4" class="hidden self-end md:block w-2/6" autoplay muted preload="auto"
+                loop></video>
+        </div>
+    </div>
+</section>

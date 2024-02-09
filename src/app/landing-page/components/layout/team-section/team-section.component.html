@@ -1,0 +1,13 @@
+<section class="flex flex-col justify-center items-center relative">
+    <div class="py-5 text-5xl flex gap-3 font-bold">
+        <span class="text-dark-blue">Notre</span>
+        <span class="text-gray">Team</span>  👊
+    </div>
+    <img src="assets/images/map.png" >
+    <img src="assets/images/team.png" class="absolute">
+    <div class="flex justify-around items-end absolute -z-50  gap-2 w-full  ">
+        @for (item of spheres; track $index) {
+        <div class="blured-sphere" [class]="item.class"></div>
+        }
+    </div>
+</section>

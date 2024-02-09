@@ -1,0 +1,16 @@
+<section class="w-full bg-blue flex flex-col items-center justify-center p-36">
+    <p class="text-white text-4xl font-semibold uppercase">{{title}}</p>
+    <h1 class="title-font uppercase">{{subTitle}}</h1>
+    <div class="grid grid-cols-2">
+        @for (item of projectDetails; track $index) {
+            <div class=" flex items-center gap-3" >
+                <p class="text-white text-7xl text-right w-64">{{item.count}}</p>
+                <span class="flex flex-col uppercase w-full  ">
+                    <p class="text-green text-xl">{{item.textOne}}</p>
+                    <p class="text-green text-xl">{{item.textTwo}}</p>
+                </span>
+            </div>
+        }
+    </div>
+
+</section>

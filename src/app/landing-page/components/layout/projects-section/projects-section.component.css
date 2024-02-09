@@ -1,0 +1,21 @@
+.bg-blue {
+    background-color: var(--bg-blue);
+}
+
+.title-font {
+    font-size: 72px;
+    background: -webkit-linear-gradient(left, #83FAF1, #3856F4);
+    background: -o-linear-gradient(right, #83FAF1, #3856F4);
+    background: -moz-linear-gradient(right, #83FAF1, #3856F4);
+    background: linear-gradient(to right, #83FAF1, #3856F4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-green {
+    color: var(--font-green);
+}
+
+.description-text {
+    max-width: 5ch;
+}

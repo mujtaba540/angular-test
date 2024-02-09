@@ -1,0 +1,55 @@
+.blured-sphere {
+    border-radius: 50%;
+    filter: blur(1.5rem);
+    background-image: radial-gradient(circle at center, currentColor, white);
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.sphere-blue {
+    color: var(--sphere-blue);
+}
+
+.sphere-purple {
+    color: var(--sphere-purple);
+}
+
+.sphere-green {
+    color: var(--light-green);
+}
+
+.text-white-gray {
+    color: var(--white-gray);
+}
+
+.text-light-green {
+    color: var(--light-green);
+}
+
+.background-text {
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width: 0.02rem;
+    -webkit-text-stroke-color: black;
+}

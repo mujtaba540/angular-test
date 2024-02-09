@@ -1,0 +1,18 @@
+<section class="relative">
+    <img [src]="details().image" class="">
+    <div class="absolute inset-y-0 left-0 flex flex-col justify-center px-10 gap-2">
+        <h1 class="text-white font-bold text-6xl">{{details().index}}</h1>
+        <h1 class="text-white font-bold text-6xl ">{{details().title}}</h1>
+        <h1 class="text-white font-bold text-6xl text-yellow ">{{details().subTitle}}</h1>
+        <div class=" flex justify-center gap-4">
+            <span class="border-r-2 "></span>
+            <ul class="text-white">
+                @for (list_item of details().list; track $index) {
+                <li>{{list_item}}</li>
+                }
+            </ul>
+        </div>
+        <button class="border-2 w-40 p-3 mt-2 border-white text-white rounded-full
+            hover:bg-white hover:text-black">Voir les projets</button>
+    </div>
+</section>
